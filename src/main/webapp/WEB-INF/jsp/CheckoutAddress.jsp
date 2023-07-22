@@ -10,12 +10,13 @@
                 </li>
                 </c:forEach>
              </ul>
+             <div class="address_btn_container">
+                          <button id="address_btn" type="submit">
+                             use this address
+                          </button>
+                      </div>
          </form>
-         <div class="address_btn_container">
-             <button id="address_btn">
-                use this address
-             </button>
-         </div>
+
  </div>
 
  <jsp:include page="newsletter-bottom.jsp" />

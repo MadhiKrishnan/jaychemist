@@ -82,7 +82,7 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping(value = "/checkoutAddress",method = RequestMethod.GET)
+    @RequestMapping(value = "/checkout",method = RequestMethod.POST)
     public String checkoutAddress(Model model,HttpServletRequest httpServletRequest){
         Person person = (Person) httpServletRequest.getSession().getAttribute("person");
         if(person!= null){;
@@ -98,7 +98,7 @@ public class HomeController {
 
     @RequestMapping(value = "/orderConfirmation",method = RequestMethod.POST)
     public String orderConfirmation(HttpServletRequest httpServletRequest){
-        return "orderConfirmation";
+        return "orderconfirmation";
     }
 
     @RequestMapping(value = "/view",method = RequestMethod.GET)

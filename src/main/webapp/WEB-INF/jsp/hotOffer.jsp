@@ -21,7 +21,7 @@
 											<h4>Rs ${item.productPrice + 474} <span>Rs ${item.productPrice}</span></h4>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout" method="post">
+											<form action="/checkout" method="post">
 												<fieldset>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="productId" value="${item.productId}" />
